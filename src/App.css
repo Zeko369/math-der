@@ -31,3 +31,21 @@
     transform: rotate(360deg);
   }
 }
+
+.container {
+  display: flex-column;
+  position: relative;
+  margin: auto;
+  left: 20%;
+  padding-top: 20px;
+}
+
+.values {
+  margin-left: 200px;
+}
+
+.asd {
+  position: relative;
+  bottom: 0;
+  left: 0;
+}
