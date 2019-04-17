@@ -47,7 +47,7 @@ export default class Three extends React.Component {
     this.scene.add(this.hemisphereLight);
 
     // this.geometry = new THREE.BoxGeometry(1, 1, 1);
-    this.geometry = new THREE.CylinderGeometry( 1, 1, 1, 16 );
+    this.geometry = new THREE.CylinderGeometry( 1, 1, 1, 64 );
     this.material = new THREE.MeshStandardMaterial({ color: 0x00ff00, metalness: 0.15 });
     this.cube = new THREE.Mesh(this.geometry, this.material);
     this.scene.add(this.cube);
