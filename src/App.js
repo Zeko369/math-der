@@ -36,9 +36,9 @@ class Application extends Component {
     const r = Math.random() * 9;
     const h = Math.random() * 9;
     if(this.state.a_locked){
-      this.handleChangeR(r)
+      this.handleChangeR(undefined, r)
     } else if(this.state.v_locked){
-      this.handleChangeR(r)
+      this.handleChangeR(undefined, r)
     } else {
       this.setState({
         radius: r,
@@ -50,7 +50,7 @@ class Application extends Component {
   }
 
   area = (r, h) => {
-    return Math.pow(r, 2) * Math.PI + 2 * Math.PI * r * h
+    return 2 * Math.pow(r, 2) * Math.PI + 2 * Math.PI * r * h
   }
 
   volume = (r, h) => {
